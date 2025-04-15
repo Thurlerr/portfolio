@@ -65,3 +65,39 @@ window.addEventListener("scroll", function () {
     });
   });
 
+
+  //formulário de contato com ajax
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form"); //pega o form pelo id
+  
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // Impede o comportamento padrão do formulário
+  
+      const data = {
+        name: form.name.value,
+        email: form.email.value,
+        message: form.message.value
+      };
+  
+      fetch("https://formsubmit.co/ajax/80ede01092ff9a77b0f002687c9ce6ff", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.log("Mensagem enviada com sucesso:", data);
+          alert("Obrigado por entrar em contato!");
+          form.reset(); // limpa o formulário
+        })
+        .catch(error => {
+          console.error("Erro ao enviar:", error);
+          alert("Erro ao enviar mensagem. Tente novamente.");
+        });
+    });
+  });
+  

@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AAAAAAAAAAAAAAAA</title>
+    <title>Andrew Portfolio</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -16,11 +17,13 @@
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script src="particles-config.js" defer></script>
 </head>
 
 <body class="px-5">
-    
-       
+  <div id="tsparticles"></div>
             <div class=" navbar-wrapper col-12 fixed-top pt-3 d-flex justify-content-end px-4 ">
 
                 <div class="name-div">
@@ -29,7 +32,7 @@
 
                 <ul class="nav nav-underline wrapper" id="navbar-relative">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="#contato">Contato</a>
                     </li>
                     <li class="nav-item" id="testeBadge">
                         <a class="nav-link disabled" aria-disabled="true">
@@ -51,7 +54,7 @@
 
       
         <div class="section-styler main-content mx-md-5 mx-0">
-            <h1>Prazer, pato!🤝 </h1>
+            <h1>Prazer, Andrew!🤝 </h1>
             <div class="main-desc">
                 <div class="mainDescColumn">
                     <p class="fs-2">Transformo complexidade em soluções simples e eficazes.</p>
@@ -79,11 +82,10 @@
             <p class="display-6 text-center">Sobre</p>
             <p class="fs-5 pt-3 pt-md-4 pt-lg-5">Iniciei minha jornada acadêmica na área da saúde, onde desenvolvi afinidade por problemas
                 que exigem análise. Com o tempo, percebi que esse raciocínio lógico se conectava melhor com a
-                tecnologia. Desde então, venho me dedicando ao desenvolvimento de software - antes um hobby -, focado em
+                tecnologia. Desde então, venho me dedicando ao desenvolvimento de software - antes um hobby - focando em
                 soluções estruturadas e eficientes.</p>
             <p class="fs-5 pt-3 pt-md-4 pt-lg-5">Atualmente consolidando conhecimentos em tecnologias front-end em projetos pessoais e paralelamente em
                 projetos acadêmicos no back-end.</p>
-            <p class=" text-end pt-3 pt-md-4 pt-lg-5 fs-4">Soluções claras nascem de entendimento profundo.</p>
         </div>
 
         <!-- setinha -->
@@ -156,33 +158,38 @@
               
                 <div class="col-lg-6 col-12 mt-4 pt-md-4 pt-lg-5 text-center mx-auto" >
                   <p id="iconDescription" class="lead pb-md-4 pb-lg-5 fs-4">HTML: Estrutura da web</p>
-                  <p id="iconText" class="">Estruturar o conteúdo de páginas web, organizando títulos, parágrafos, links e formulários de maneira semântica e com acessibilidade.
-                    O HTML é a base de qualquer página web, permitindo que os navegadores interpretem e exibam o conteúdo corretamente e não pode faltar no cinto de utilidades de qualquer desenvolvedor.</p>
+                    <p id="iconText" class="">Estruturar o conteúdo de páginas web, organizando títulos, parágrafos, links e formulários de maneira semântica e com acessibilidade.
+                      O HTML é a base de qualquer página web, permitindo que os navegadores interpretem e exibam o conteúdo corretamente e não pode faltar no cinto de utilidades de qualquer desenvolvedor.</p>
+                  
                 </div>
               </div>
         </div>
 
         <!-- setinha -->
         <div class="scroll-down">
-          <a href="#tech-stack">
+          <a href="#contato">
             <i class="bi bi-chevron-down"></i>
           </a>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis asperiores ut quaerat labore delectus
-            aperiam quam deleniti, quibusdam doloremque atque at rerum magni consequatur sequi corrupti. Architecto quis
-            tempora aliquid!
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis asperiores ut quaerat labore delectus
-            aperiam quam deleniti, quibusdam doloremque atque at rerum magni consequatur sequi corrupti. Architecto quis
-            tempora aliquid!
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis asperiores ut quaerat labore delectus
-            aperiam quam deleniti, quibusdam doloremque atque at rerum magni consequatur sequi corrupti. Architecto quis
-            tempora aliquid!
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis asperiores ut quaerat labore delectus
-            aperiam quam deleniti, quibusdam doloremque atque at rerum magni consequatur sequi corrupti. Architecto quis
-            tempora aliquid!
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis asperiores ut quaerat labore delectus
-            aperiam quam deleniti, quibusdam doloremque atque at rerum magni consequatur sequi corrupti. Architecto quis
-            tempora aliquid!
+        <div id="contato" class="container col-lg-6 col-md-8 col-12 mt-5 pb-5">
+          <h2 class="display-6 pe-2 text-center" >Contato</h2>
+
+          <p class="fs-5">Aberto a novas oportunidades, freelas e boas ideias. Entre em contato!</p>
+          <p class="fs-5">Você pode me encontrar no <a href="https://www.linkedin.com/in/andrew-thurler/">LinkedIn</a>, <a href="https://github.com/Thurlerr">GitHub</a> ou enviar uma solicitação abaixo.</p>
+          
+          <div class="d-flex justify-content-center"> 
+            <form id="contact-form" action="https://formsubmit.co/80ede01092ff9a77b0f002687c9ce6ff" method="POST">
+              <div>
+                <input class="border border-primary-subtle rounded p-2 m-1"  type="text" name="name" placeholder="Seu nome" required>
+                <input class="border border-primary-subtle rounded p-2 m-1" type="email" name="email" placeholder="Seu e-mail" required>
+              </div>
+              <div class="d-flex flex-column">
+                <textarea placeholder="Mensagem" class="border border-primary-subtle rounded p-2 m-1" name="message" rows="10" required></textarea>
+                <button id="submit-button" class="contact-btn" type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
 
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
